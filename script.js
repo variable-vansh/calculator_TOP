@@ -4,9 +4,9 @@ let subtract = (num1, num2) => num1 - num2;
 let multiply = (num1, num2) => num1 * num2;
 let divide = (num1, num2) => { return ((num2 == 0) ? "Don't you dare divide by 0 🔪" : num1 / num2) }
 
-let num1 = parseInt(prompt("give first number"));
-let num2 = parseInt(prompt("give second number"));
-let sign = prompt("enter operation: +,-,x,/")
+// let num1 = parseInt(prompt("give first number"));
+// let num2 = parseInt(prompt("give second number"));
+// let sign = prompt("enter operation: +,-,x,/")
 
 // validate input
 if (isNaN(num1) || isNaN(num2)) {
@@ -29,4 +29,4 @@ if (isNaN(num1) || isNaN(num2)) {
     }
 }
 
-console.log(operator(sign, num1, num2))
+// console.log(operator(sign, num1, num2))
