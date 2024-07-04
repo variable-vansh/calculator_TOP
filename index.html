@@ -12,40 +12,40 @@
 <body>
 
     <div class="calculator">
-        <div class="display"></div>
+        <div class="display">abracadabra</div>
         <div class="keys">
             <div class="upper">
                 <div class="operators">
-                    <button id="add">+</button>
-                    <button id="subtract">-</button>
-                    <button id="multiply">x</button>
-                    <button class="divide">÷</button>
+                    <button id="add" onclick="operatorClicked('add')">+</button>
+                    <button id="subtract" onclick="operatorClicked('subtract')">-</button>
+                    <button id="multiply" onclick="operatorClicked('multiply')">x</button>
+                    <button class="divide" onclick="operatorClicked('divide')">÷</button>
                 </div>
             </div>
             <div class="lower">
                 <div class="lowerLeft">
                     <div class="numbers">
-                        <button class="seven">7</button>
-                        <button class="eight">8</button>
-                        <button class="nine">9</button>
+                        <button class="seven" onclick="createNum(7)">7</button>
+                        <button class="eight" onclick="createNum(8)">8</button>
+                        <button class="nine" onclick="createNum(9)">9</button>
 
-                        <button class="four">4</button>
-                        <button class="five">5</button>
-                        <button class="six">6</button>
+                        <button class="four" onclick="createNum(4)">4</button>
+                        <button class="five" onclick="createNum(5)">5</button>
+                        <button class="six" onclick="createNum(6)">6</button>
 
-                        <button class="one">1</button>
-                        <button class="two">2</button>
-                        <button class="three">3</button>
+                        <button class="one" onclick="createNum(1)">1</button>
+                        <button class="two" onclick="createNum(2)">2</button>
+                        <button class="three" onclick="createNum(3)">3</button>
                     </div>
                     <div class="zeroDecimal">
                         <button class="plusMinus">+/-</button>
-                        <button class="zero">0</button>
+                        <button class="zero" onclick="createNum(0)">0</button>
                         <button class="decimal">.</button>
                     </div>
                 </div>
                 <div class="lowerRight">
                     <div class="clear">
-                        <button class="clear">C</button>
+                        <button class="clear" onclick="clearDisplay()">C</button>
                     </div>
                     <div class="backspace">
                         <button class="backspace"><i class="material-icons">backspace</i></button>
