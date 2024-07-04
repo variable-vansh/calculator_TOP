@@ -68,7 +68,7 @@ function operatorClicked(sign) {
             symbol = "ye kaise dekh liya? you need to die"
 
     }
-    display.textContent = num1 + symbol;
+    display.textContent = num1 + " " + symbol;
 }
 
 function clearDisplay() {
@@ -77,4 +77,40 @@ function clearDisplay() {
     num2 = 0;
     symbol = "";
     condition = ""
+    display.style.color = "white";
+    display.style.fontSize = "70px"
+}
+
+let result = 0;
+
+function enterClicked() {
+    num = parseFloat(num);
+    num2 = parseFloat(num2);
+    switch (symbol) {
+        case "+":
+            result = num + num2;
+            break;
+        case "-":
+            result = num - num2;
+            break;
+        case "x":
+            result = num * num2;
+            break;
+        case "÷":
+            if (num2 == 0) {
+                result = "Don't you dare divide by 0 🔪"
+                display.style.color = "red";
+                display.style.fontSize = "30px"
+            } else {
+                result = num / num2;
+            }
+            break;
+        default:
+            result = 0;
+    }
+
+    num = result;
+    num2 = 0;
+    display.textContent = result;
+    symbol = ""
 }

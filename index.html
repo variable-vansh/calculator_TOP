@@ -10,9 +10,8 @@
 </head>
 
 <body>
-
     <div class="calculator">
-        <div class="display">abracadabra</div>
+        <div class="display"></div>
         <div class="keys">
             <div class="upper">
                 <div class="operators">
@@ -28,11 +27,9 @@
                         <button class="seven" onclick="createNum(7)">7</button>
                         <button class="eight" onclick="createNum(8)">8</button>
                         <button class="nine" onclick="createNum(9)">9</button>
-
                         <button class="four" onclick="createNum(4)">4</button>
                         <button class="five" onclick="createNum(5)">5</button>
                         <button class="six" onclick="createNum(6)">6</button>
-
                         <button class="one" onclick="createNum(1)">1</button>
                         <button class="two" onclick="createNum(2)">2</button>
                         <button class="three" onclick="createNum(3)">3</button>
@@ -40,7 +37,7 @@
                     <div class="zeroDecimal">
                         <button class="plusMinus">+/-</button>
                         <button class="zero" onclick="createNum(0)">0</button>
-                        <button class="decimal">.</button>
+                        <button class="decimal" onclick="decimalButtonClicked()">.</button>
                     </div>
                 </div>
                 <div class="lowerRight">
@@ -51,7 +48,7 @@
                         <button class="backspace"><i class="material-icons">backspace</i></button>
                     </div>
                     <div class="enter">
-                        <button class="enter">=</button>
+                        <button class="enter" onclick="enterClicked()">=</button>
                     </div>
                 </div>
             </div>

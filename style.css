@@ -1,90 +1,92 @@
-body {
-    display: flex;
-    justify-content: center;
-}
+ body {
+     display: flex;
+     justify-content: center;
+ }
 
-.calculator {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 400px;
-    height: auto;
-    background-color: rgb(172, 172, 172);
-    padding: 20px;
-    border-radius: 20px;
-}
+ .calculator {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 400px;
+     height: auto;
+     background-color: rgb(172, 172, 172);
+     padding: 20px;
+     border-radius: 20px;
+ }
 
-.display {
-    background-color: black;
-    align-self: center;
-    height: 100px;
-    width: 400px;
-    /* border-radius: 20px; */
-    margin-bottom: 20px;
-    color: aliceblue;
-    font-size: 70px;
-    font-weight: bold;
-    text-align: end;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
+ .display {
+     background-color: black;
+     align-self: center;
+     height: 100px;
+     width: 400px;
+     /* border-radius: 20px; */
+     margin-bottom: 20px;
+     color: aliceblue;
+     font-size: 70px;
+     font-weight: bold;
+     text-align: end;
+     padding-top: 10px;
+     margin-bottom: 10px;
+     box-sizing: border-box;
+     padding: 10px;
+ }
 
-.upper {
-    font-size: 0;
-}
+ .upper {
+     font-size: 0;
+ }
 
 
-.operators button {
-    background-color: rgb(253, 241, 115);
-}
+ .operators button {
+     background-color: rgb(253, 241, 115);
+ }
 
-.lower {
-    display: flex;
-    font-size: 0;
-}
+ .lower {
+     display: flex;
+     font-size: 0;
+ }
 
-.keys {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+ .keys {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
 
-button {
-    height: 100px;
-    width: 100px;
-    font-size: 45px;
-    font-weight: bold;
-    border-radius: 40%;
-}
+ button {
+     height: 100px;
+     width: 100px;
+     font-size: 45px;
+     font-weight: bold;
+     border-radius: 40%;
+ }
 
-.zero {
-    width: 100px;
-    border-radius: 40px;
-}
+ .zero {
+     width: 100px;
+     border-radius: 40px;
+ }
 
-.plusMinus,
-.decimal {
-    background-color: antiquewhite;
-}
+ .plusMinus,
+ .decimal {
+     background-color: antiquewhite;
+ }
 
-.enter {
-    height: 200px;
-    border-radius: 40px;
-    background-color: rgb(255, 168, 87);
-}
+ .enter {
+     height: 200px;
+     border-radius: 40px;
+     background-color: rgb(255, 168, 87);
+ }
 
-.clear button {
-    background-color: rgb(131, 210, 255);
-}
+ .clear button {
+     background-color: rgb(131, 210, 255);
+ }
 
-.backspace i.material-icons {
-    font-size: 40px;
-    padding-top: 15px;
-    padding-right: 5px;
-    ;
-    /* or any other desired size */
-}
+ .backspace i.material-icons {
+     font-size: 40px;
+     padding-top: 15px;
+     padding-right: 5px;
+     ;
+     /* or any other desired size */
+ }
 
-.backspace button {
-    background-color: rgb(250, 192, 192);
-}
+ .backspace button {
+     background-color: rgb(250, 192, 192);
+ }
